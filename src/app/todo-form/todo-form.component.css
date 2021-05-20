@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  justify-content: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+label {
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  padding: 5px 15px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}

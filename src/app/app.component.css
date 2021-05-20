@@ -1,0 +1,12 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-family: sans-serif;
+  color: darkred;
+  font-weight: 700;
+  text-transform: uppercase;
+}
