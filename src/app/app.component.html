@@ -1,5 +1,22 @@
 <div class="container">
-  <h1>{{title}}</h1>
+  <app-header></app-header>
   <app-todos></app-todos>
   <app-todo-form></app-todo-form>
+  <button (click)="toggleModal()">Open modal</button>
+  <app-footer></app-footer>
 </div>
+
+<app-modal [header]="header"
+           [footer]="footer"
+           [style.display]="isHidden ? 'none' : 'flex'"
+           (modalClose)="toggleModal()">
+  <app-todos></app-todos>
+</app-modal>
+
+<ng-template #header>
+  <app-header></app-header>
+</ng-template>
+
+<ng-template #footer>
+  <app-footer></app-footer>
+</ng-template>

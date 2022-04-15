@@ -12,7 +12,7 @@ export class TodosComponent implements OnInit {
   public loading = true;
   public searchString = '';
 
-  constructor(private todosService: TodosService) {
+  constructor(public todosService: TodosService) {
   }
 
   ngOnInit(): void {

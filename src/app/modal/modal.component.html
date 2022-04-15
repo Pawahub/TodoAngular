@@ -1,0 +1,11 @@
+<div class="container">
+  <button (click)="closeModal()">X</button>
+
+  <ng-container *ngTemplateOutlet="header"></ng-container>
+
+  <div class="modal-body">
+    <ng-content></ng-content>
+  </div>
+
+  <ng-container *ngTemplateOutlet="footer"></ng-container>
+</div>
